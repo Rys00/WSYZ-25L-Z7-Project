@@ -1,0 +1,44 @@
+# Lokalizacja producentów to: Błonie, Książenice, Góra Kalwaria, Otwock, Wołomin, Legionowo.
+set PRODUCENCI := P1 P2 P3 P4 P5 P6;
+# Lokalizacje magazynów to Pruszków, Piaseczno, Zielonka.
+set MAGAZYNY := M1 M2 M3;
+set PRODUKTY := Ziemniaki Kapusta Buraki Marchew;
+
+param produkcja_max:
+     Ziemniaki Kapusta Buraki Marchew :=
+  P1 120 80 120 60
+  P2 60 90 150 50
+  P3 160 70 190 90
+  P4 260 50 60 100
+  P5 200 230 190 110
+  P6 300 140 60 90;
+
+param pojemnosc_magazyn_max :=
+  M1 800
+  M2 1200
+  M3 750;
+
+param cena_za_1km_1ton := 5;
+
+param odleglosc_pm: M1 M2 M3 :=
+  P1 16.811 39.64 47.294
+  P2 31.889 28.516 53.654
+  P3 43.928 19.607 43.742
+  P4 37.78 28.29 25.864
+  P5 42.807 55.74 9.74
+  P6 38.906 51.839 23.38;
+
+# wyliczone na podstawie punktu b)
+param zapotrzebowanie_magazyny :=
+  M1 Buraki       54.761
+  M1 Kapusta      43.083
+  M1 Marchew      30.388
+  M1 Ziemniaki    70.794
+  M2 Buraki      251.818
+  M2 Kapusta     197.655
+  M2 Marchew     153.624
+  M2 Ziemniaki   346.75
+  M3 Buraki      195.668
+  M3 Kapusta     154.446
+  M3 Marchew     121.864
+  M3 Ziemniaki   278.022;
