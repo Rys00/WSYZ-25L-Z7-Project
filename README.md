@@ -1,16 +1,29 @@
 # Raport z rozwiązaniami do cz. II projektu z przedmiotu WSYZ
 
-Wykonali: Martyna Orzechowska 331417, Mateusz Ogniewski 331413, Mateusz Wawrzyniak 3314xx
+Wykonali: Martyna Orzechowska 331417, Mateusz Ogniewski 331413, Mateusz Wawrzyniak 331450
 
 ## Analiza problemu
 
+Jako zadanie projektowe otrzymaliśmy  zadanie opracować modele dot. optymalizacji kosztów transportu produktów spożywczych od producentów do magazynów a następnie do sklepów. Powyższy problem zdecydowaliśmy się przedstawić jako dwa osobne zadania optymalizacyjne. Zgodnie z informacją otrzymaną w poleceniu magazyny określają zapotrzebowanie na podstawie wcześniejszych zapotrzebowań poszczególnych sklepów na określone produkty. Następnie na podstawie zapotrzebowania sieci sklepów z poszczególnych magazynów  przystępujemy do dalszej optymalizacji kosztów transportu od producentów do magazynów.
 
 ## Przykładowe dane
 
+Opracowując przykładowe dane przyjęliśmy następujące założenia:
+
+- suma zapotrzebowań sklepów na poszczególne produkty wynosi ok. 70%  możliwości produkcyjnych podanych w poleceniu;
+- pojemność magazynów przysklepowych wynosi  średnio ok. 2,5 tygodniowej sumy zapotrzebowania na podane produkty;
+- magazyn przysklepowy musi mieć min. 10% przewidywanego zapotrzebowania danego produkty na magazynie jako minimalne zapasy w sytuacji losowej
+- w celu obliczenia odległości między sklepami skorzystaliśmy z API od Google Maps.
+
+W opracowywaniu danych uwzględniliśmy założenia podane w poleceniu.
+
+Przykładowe dane zostały zapisane w plikach .dat. Zapotrzebowanie magazynów na poszczególne produkty zostało otrzymane korzystając z opracowanego modelu b.
+
 ## Opracowane modele
 
-## Otrzymane wyniki
+Opracowaliśmy dwa modele - model opowiadający za optymalizację całkowitego kosztu transportu między magazynami a siecią sklepów (model b) oraz model odpowiadający za optymalizację całkowitego kosztu transportu miedzy producentami a magazynami (model a). Jako funkcje celu modelu b wybraliśmy całkowity koszt transportu, ponieważ chcemy uzyskać jak najmniejsze koszty dla sieci sklepów a nie pojedyńczych sklepów jako byty niezależne. Analogicznie postąpiliśmy dla modelu a uznając poszczególne magazyny jako byty powiązane finansowo będące siecią.
 
+## Otrzymane wyniki
 
 ## Korzystanie z narzędzia ampl
 
