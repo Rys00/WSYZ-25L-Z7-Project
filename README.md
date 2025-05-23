@@ -23,7 +23,19 @@ Przykładowe dane zostały zapisane w plikach .dat. Zapotrzebowanie magazynów n
 
 Opracowaliśmy dwa modele - model opowiadający za optymalizację całkowitego kosztu transportu między magazynami a siecią sklepów (model b) oraz model odpowiadający za optymalizację całkowitego kosztu transportu miedzy producentami a magazynami (model a). Jako funkcje celu modelu b wybraliśmy całkowity koszt transportu, ponieważ chcemy uzyskać jak najmniejsze koszty dla sieci sklepów a nie pojedyńczych sklepów jako byty niezależne. Analogicznie postąpiliśmy dla modelu a uznając poszczególne magazyny jako byty powiązane finansowo będące siecią.
 
+W sytuacji podania za dużego zapotrzebowania sklepów do możliwości podanych magazynów zakładając tylko jedno zaopatrzenie sieci magazynów przez producentów model nie będzie w stanie podać rozwiązania problemu.
+
 ## Otrzymane wyniki
+
+Całkowity koszt transportu producenci - magazyny: 172 075
+Całkowity koszt transportu magazyny - sklepy: 151 113
+
+Szczegółowe wyniki znajdują się w katalogu results, są to:
+
+- plan transportu warzyw do sklepów z poszczególnych magazynów w danych tygodniach;
+- plan transportu warzyw do magazynów od poszczególnych producentów;
+- zapotrzebowanie magazynów na poszczególne warzywa;
+- plan przechowywania produktów w magazynach przysklepowych.
 
 ## Korzystanie z narzędzia ampl
 
