@@ -32,10 +32,10 @@ Całkowity koszt transportu magazyny - sklepy: 151 113
 
 Szczegółowe wyniki znajdują się w katalogu results, są to:
 
-- plan transportu warzyw do sklepów z poszczególnych magazynów w danych tygodniach;
-- plan transportu warzyw do magazynów od poszczególnych producentów;
-- zapotrzebowanie magazynów na poszczególne warzywa;
-- plan przechowywania produktów w magazynach przysklepowych.
+- plan transportu warzyw do sklepów z poszczególnych magazynów w danych tygodniach - [transport z magazynów do sklepów](results/transport_magazyny_sklepy.md);
+- plan transportu warzyw do magazynów od poszczególnych producentów - [transport od producentów do magazynów](results/transport_producenci_magazyny.md);
+- zapotrzebowanie magazynów na poszczególne warzywa - [zapotrzebowanie poszczególnych magazynów](results/zapotrzebowanie_magazyny.md);
+- plan przechowywania produktów w magazynach przysklepowych [zapełnienie całkowite](results/sklepy_magazyny_laczne.md) oraz [poszczególne produkty](results/sklepy_magazyny_produkty.md).
 
 ## Korzystanie z narzędzia ampl
 
