@@ -1,3 +1,19 @@
+# Raport z rozwiązaniami do cz. II projektu z przedmiotu WSYZ
+
+Wykonali: Martyna Orzechowska 331417, Mateusz Ogniewski 331413, Mateusz Wawrzyniak 3314xx
+
+## Analiza problemu
+
+
+## Przykładowe dane
+
+## Opracowane modele
+
+## Otrzymane wyniki
+
+
+## Korzystanie z narzędzia ampl
+
 ```sh
 # podpunkt b i c:
 reset; model "b.mod"; data "b.dat"; option solver cplex; solve; display koszt;
